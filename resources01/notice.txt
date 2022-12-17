@@ -1,0 +1,65 @@
+
+notice fichier
+settings.properties
+
+le fichier settings.properties est a remplir en dur
+au fur et à mesure que le projet indexeur de projets
+s'etoffe.
+
+Ce fichier sert a remplir la variable
+tabProjets tableau, instance de la class Project.
+(declarée, initialisée, utilisée ds la methode
+loadProjects() du fichier Accueil_C.java).
+
+il faut le meme nombre de parametres pr chaque
+projet.
+
+il faut que les parametres de chaque projet
+portent le meme nom.
+
+il y a 8 parametres pr chaque projet
+si on veut enlever ou ajouter des parametres
+aux projets, il faut modifier en conséquence
+les fichiers:
+ - fichier Class: Acceuil_C.java
+ - fichier Record: Project.java
+ - fichier Enumerat°: ProjectUtils.java
+ 
+ Les 8 parametres
+ title:			parle de lui-meme
+ description	parle de lui-meme
+ path			parle de lui-meme
+ tags			parle de lui-meme
+ p01_fichierOptions: sera tjs "options"
+ p02_fichierClasses: sera tjs "classes"
+ p03_dossierSortie (utilisée par la commande /usr/bin/java)
+ p04_dossierFichierClass (utilisée par la commande /usr/bin/java)
+ 
+ le parametre p01_fichierOptions sera tjs "options"
+ ds le fichier Accueil_C.java, ce parametre est representé par
+ "@resources01/" + service01.getValue().p01_fichierOptions() + indiceProjet
+ qui represente la chaine concaténée pr la commande javac.
+ C'est l'emplacement du fichier des options que l'on passe à la commande javac.
+ il est situé ds le dossier resources01, 
+ puis on concatene la variable indiceProjet
+ On obtient alors le chemin du fichier qui ne se nomme "options"
+ la commande est alors:
+ javac @resources01/options0 @resources01/classes0
+ (pr le premier projet (indice 0 ds tabProjets))
+ 
+ Le principe est le meme pr le parametre p02_fichierClasses
+ 
+ Le contenu de ce fichier "options"
+ 1° L
+ -d pr specifier le repertoire de sortie
+ la definition du repertoire de sortie
+ 
+ 2° L
+ l'adresse relative du fichier module-info.java
+ 
+ Si jamais vs ajoutez 1 projet, ne pas oublier de le referencer
+ sur la premiere L du fichier
+ 
+ 
+ adresse oracle pr la commande javac avec des fichiers d'options et de classes
+ https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html
