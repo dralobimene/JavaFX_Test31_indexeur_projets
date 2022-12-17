@@ -1,0 +1,80 @@
+
+Comment fonctionne le projet indexeur de projet
+3 boutons pr chaque projet
+
+- btn01: execute la commande java
+	cree le dossier out si celui n'existe pas.
+	creer les dossiers ou se trouve au - 1 fichier .java
+	il faut dc creer les dossiers ou il n'y a pas de fichier .java
+	
+- btn 02: copie les fichiers qui ne st pas compilables (les fichiers .css, .fxml, autres)
+	ds leur dossier respectif
+
+- btn 03: execute la commande javac
+
+Au 2022-10-28
+on peut executer le btn01
+il faut faire manuellement les actions que doit faire le btn02
+on peut ensuite executer le btn03
+
+TODO: coder les act° que doit effectuer le btn02
+	faire en sorte qu'1 seul bouton soit necessaire a l'execut° des 3 boutons
+
+----------------------------------------------------------------------
+
+pr que le projet fonctionne:
+il faut creer 1 fichier classes et 1 fichier options
+pr chaque nouveau projet que vs vlez ajouter ds l'indexeur de projets
+
+syntaxe du contenu des fichiers options et classes
+voir le fichier settings.properties
+et le fichier Accueil_C.java du projet
+Ds les fichiers options et classes (qui se trouvent ds le dossier resources01), il faut marquer
+les parametres des commandes respectives
+java et javac
+
+----------------------------------------------------------------------
+
+Liste le contenu de chaque fichier classesX et optionsX
+necessaires pr chaque projet
+
+projet01 (indice 0)
+fichier classes
+../JavaFX_Test01_Hello_Devstory/src/application/Main.java
+
+fichier options
+-d ./out/001
+../JavaFX_Test01_Hello_Devstory/src/module-info.java
+
+----------------------------------------------------------------------
+
+projet02 (indice 1)
+fichier classes
+../JavaFX_Test02_Desvstory/src/applicationShowDate/Main.java
+../JavaFX_Test02_Desvstory/src/applicationShowDate/ControlleurClass.java
+
+fichier options
+-d ./out/002
+../JavaFX_Test02_Desvstory/src/module-info.java
+
+----------------------------------------------------------------------
+
+projet 03 (indice 2)
+fichier classes
+../JavaFX_Test03_Code_Makey_Ch/src/ch/makery/address/MainApp.java
+
+fichier options
+-d ./out/003
+../JavaFX_Test03_Code_Makey_Ch/src/module-info.java
+
+----------------------------------------------------------------------
+
+projet 04 (indice 3)
+fichier classes
+../JavaFX_Test04_Code_Makery_Ch/src/ch/makery/address/MainApp.java
+../JavaFX_Test04_Code_Makery_Ch/src/ch/makery/address/model/Person.java
+../JavaFX_Test04_Code_Makery_Ch/src/ch/makery/address/view/PersonOverviewController.java
+
+fichier options
+-d ./out/004
+../JavaFX_Test04_Code_Makery_Ch/src/module-info.java
