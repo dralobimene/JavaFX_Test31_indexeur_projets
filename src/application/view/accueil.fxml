@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane
+	fx:id="AP"
+	prefHeight="600.0"
+	prefWidth="800.0"
+	xmlns="http://javafx.com/javafx/18"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.controller.Accueil_C">
+	<children>
+		<Pane
+			fx:id="P"
+			prefHeight="600.0"
+			prefWidth="800.0"
+			AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<Button
+					fx:id="btn_quitter"
+					layoutX="33.0"
+					layoutY="35.0"
+					mnemonicParsing="false"
+					onAction="#quitter_appli"
+					text="quitter appli" />
+				<ScrollPane
+					fx:id="SCPane"
+					layoutX="33.0"
+					layoutY="75.0"
+					prefHeight="400.0"
+					prefWidth="400.0">
+					<content>
+						<Pane
+							fx:id="contentSCPane"
+							prefHeight="400.0"
+							prefWidth="400.0">
+							<children>
+								<Button
+									fx:id="btnChargerProjet01"
+									layoutX="10.0"
+									layoutY="20.0"
+									mnemonicParsing="false"
+									onAction="#chargerProject01"
+									text="charger projet 01" />
+								<Button
+									fx:id="btnCopierFichiersDuProjet01"
+									layoutX="20.0"
+									layoutY="60.0"
+									mnemonicParsing="false"
+									onAction="#copierFichiersProject01"
+									text="copier les fichiers du projet 01 (methode a coder)" />
+								<Button
+									fx:id="btnExecuterProjet01"
+									layoutX="20.0"
+									layoutY="100.0"
+									mnemonicParsing="false"
+									onAction="#executerProject01"
+									text="executer projet 01" />
+								<Button
+									fx:id="btnChargerProjet02"
+									layoutX="10.0"
+									layoutY="140.0"
+									mnemonicParsing="false"
+									onAction="#chargerProject02"
+									text="charger projet 02" />
+								<Button
+									fx:id="btnCopierFichiersDuProjet02"
+									layoutX="20.0"
+									layoutY="180.0"
+									mnemonicParsing="false"
+									onAction="#copierFichiersProject02"
+									text="copier les fichiers du projet 02 (methode a coder)" />
+								<Button
+									fx:id="btnExecuterProjet02"
+									layoutX="20.0"
+									layoutY="220.0"
+									mnemonicParsing="false"
+									onAction="#executerProject02"
+									text="executer projet 02" />
+								<Button
+									fx:id="btnChargerProjet03"
+									layoutX="10.0"
+									layoutY="260.0"
+									mnemonicParsing="false"
+									onAction="#chargerProject03"
+									text="charger projet 03" />
+								<Button
+									fx:id="btnCopierFichiersDuProjet03"
+									layoutX="20.0"
+									layoutY="300.0"
+									mnemonicParsing="false"
+									onAction="#copierFichiersProject03"
+									text="copier les fichiers du projet 03 (methode a coder)" />
+								<Button
+									fx:id="btnExecuterProjet03"
+									layoutX="20.0"
+									layoutY="340.0"
+									mnemonicParsing="false"
+									onAction="#executerProject03"
+									text="executer projet 03" />
+								<Button
+									fx:id="btnChargerProjet04"
+									layoutX="10.0"
+									layoutY="380.0"
+									mnemonicParsing="false"
+									onAction="#chargerProject04"
+									text="charger projet 04" />
+								<Button
+									fx:id="btnCopierFichiersDuProjet04"
+									layoutX="20.0"
+									layoutY="420.0"
+									mnemonicParsing="false"
+									onAction="#copierFichiersProject04"
+									text="copier les fichiers du projet 04 (methode a coder)" />
+								<Button
+									fx:id="btnExecuterProjet04"
+									layoutX="20.0"
+									layoutY="460.0"
+									mnemonicParsing="false"
+									onAction="#executerProject04"
+									text="executer projet 04" />
+							</children>
+						</Pane>
+					</content>
+				</ScrollPane>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

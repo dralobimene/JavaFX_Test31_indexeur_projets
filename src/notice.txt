@@ -1,0 +1,27 @@
+
+Le fichier ClassPB.java ne sert plus
+
+pr ajouter 1 projet, il faut
+
+- ajouter la ref du nveau projet
+1° l du fichier settings.properties
+
+- ajouter les parametres du projet a la suite des autres projets
+ds le fichier settings.properties
+
+- ajouter les boutons necessaires aux actions ds le fichier
+accueil.fxml et Accueil_C.java
+
+- creer les fichiers options et classes necessaires au projet ds le rep
+resources01
+
+Si jamais, ds votre projet indexé vs avez des repertoires qui contiennent
+des fichiers qui ne pevent pas etre compilés (css ou autres), la commande
+javac, ne creeera pas ces repertoires, il faudra les creer à la main
+(ou avec le bouton de la seconde etape du processus: a coder vs meme)
+
+en l'etat, la methode des seconds boutons de chaque processus n'est pas ecrite
+elle doit permettre de copier ds l'arborescence de repertoires les fichiers que la commande
+javac ne compile pas (fichiers css, autres).
+soit on implemente cette methode
+soit on copie les fichiers à la main
